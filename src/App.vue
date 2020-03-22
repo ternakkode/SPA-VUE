@@ -144,7 +144,7 @@ export default {
     }
   },
   async created () {
-    axios.get()
+    axios.get('http://localhost:8080/db.json')
       .then((result) => {
         this.tshirts = result.data.tshirts
         this.shirts = result.data.shirts
