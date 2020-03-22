@@ -1,83 +1,130 @@
 {
-  "tshirts": [
+  "sepatu": [
     {
-      "name": "T-Shirt 1",
-      "price": "10.000"
+      "name": "Sepatu 1",
+      "price": "10.000",
+      "pictures" : "1.png"
     },
     {
-      "name": "T-Shirt 2",
-      "price": "15.000"
+      "name": "Sepatu 2",
+      "price": "15.000",
+      "pictures" : "2.png"
     },
     {
-      "name": "T-Shirt 3",
-      "price": "20.000"
+      "name": "Seoatu 3",
+      "price": "20.000",
+      "pictures" : "3.png"
     },
     {
-      "name": "T-Shirt 4",
-      "price": "25.000"
+      "name": "Sepatu 4",
+      "price": "25.000",
+      "pictures" : "4.png"
     },
     {
-      "name": "T-Shirt 5",
-      "price": "30.000"
+      "name": "Sepatu 5",
+      "price": "30.000",
+      "pictures" : "5.png"
     },
     {
-      "name": "T-Shirt 6",
-      "price": "35.000"
+      "name": "Sepatu 6",
+      "price": "35.000",
+      "pictures" : "6.png"
+    },
+    {
+      "name": "Sepatu 7",
+      "price": "35.000",
+      "pictures" : "7.png"
+    },
+
+    {
+      "name": "Sepatu 8",
+      "price": "35.000",
+      "pictures" : "8.png"
     }
   ],
-  "shirts": [
+  "baju": [
     {
-      "name": "Shirt 1",
-      "price": "10.000"
+      "name": "Baju 1",
+      "price": "10.000",
+      "pictures" : "1.png"
     },
     {
-      "name": "Shirt 2",
-      "price": "15.000"
+      "name": "Baju 2",
+      "price": "15.000",
+      "pictures" : "2.png"
     },
     {
-      "name": "Shirt 3",
-      "price": "20.000"
+      "name": "Baju 3",
+      "price": "20.000",
+      "pictures" : "3.png"
     },
     {
-      "name": "Shirt 4",
-      "price": "25.000"
+      "name": "Baju 4",
+      "price": "25.000",
+      "pictures" : "4.png"
     },
     {
-      "name": "Shirt 5",
-      "price": "30.000"
+      "name": "Baju 5",
+      "price": "30.000",
+      "pictures" : "5.png"
     },
     {
-      "name": "Shirt 6",
-      "price": "35.000"
+      "name": "Baju 6",
+      "price": "35.000",
+      "pictures" : "6.png"
+    },
+    {
+      "name": "Baju 7",
+      "price": "35.000",
+      "pictures" : "7.png"
+    },
+
+    {
+      "name": "Baju 8",
+      "price": "35.000",
+      "pictures" : "8.png"
     }
-  ],
-  "pants": [
+  ],"celana": [
     {
-      "name": "Pants 1",
-      "price": "10.000"
+      "name": "Celana 1",
+      "price": "10.000",
+      "pictures" : "1.png"
     },
     {
-      "name": "Pants 2",
-      "price": "15.000"
+      "name": "Celana 2",
+      "price": "15.000",
+      "pictures" : "2.png"
     },
     {
-      "name": "Pants 3",
-      "price": "20.000"
+      "name": "Celana 3",
+      "price": "20.000",
+      "pictures" : "3.png"
     },
     {
-      "name": "Pants 4",
-      "price": "25.000"
+      "name": "Celana 4",
+      "price": "25.000",
+      "pictures" : "4.png"
     },
     {
-      "name": "Pants 5",
-      "price": "30.000"
+      "name": "Celana 5",
+      "price": "30.000",
+      "pictures" : "5.png"
     },
     {
-      "name": "Pants 6",
-      "price": "35.000"
+      "name": "Celana 6",
+      "price": "35.000",
+      "pictures" : "6.png"
+    },
+    {
+      "name": "Celana 7",
+      "price": "35.000",
+      "pictures" : "7.png"
+    },
+
+    {
+      "name": "Celana 8",
+      "price": "35.000",
+      "pictures" : "8.png"
     }
-  ],
-  "test": {
-    "name": "test"
-  }
+  ]
 }

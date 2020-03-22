@@ -71,13 +71,13 @@
                     <b-tab title="Rekomendasi" active>
                     <ul class="container mt-4">
                           <div class="row">
-                            <div v-for="(shirt, index) in shirts" :key="index" class="col-md-3 mt-5 mb-2 text-center">
+                            <div v-for="(produk, index) in celana" :key="index" class="col-md-3 mt-5 mb-2 text-center">
                               <div class="card kotak-produk">
-                                <img src="https://rajabrawijaya.ub.ac.id/public/uploads/foto-artikel/1565647936-PENGENALAN KEHIDUPAN KAMPUS MAHASISWA BARU UNIVERSITAS BRAWIJAYA.JPG" class="card-img-top gambar-info">
+                                <img src="./pictures/produk/celana/1.png" class="card-img-top gambar-info" style="background-color:#F0F1F3;">
                               </div>
                               <div class="product-details">
-                                <h6 class="display-6 mt-3">{{ shirt.name }}</h6>
-                                <h6 class="display-6 text-muted">Rp.{{ shirt.price }}</h6>
+                                <h6 class="display-6 mt-3">{{ produk.name }}</h6>
+                                <h6 class="display-6 text-muted">Rp.{{ produk.price }}</h6>
                               </div>
                             </div>
                           </div>
@@ -86,31 +86,31 @@
                     <b-tab title="Terlaris">
                       <ul class="container mt-4">
                         <div class="row">
-                          <div v-for="(shirt, index) in shirts" :key="index" class="col-md-3 mt-5 mb-2 text-center">
+                            <div v-for="(produk, index) in celana" :key="index" class="col-md-3 mt-5 mb-2 text-center">
                               <div class="card kotak-produk">
-                                <img src="https://rajabrawijaya.ub.ac.id/public/uploads/foto-artikel/1565647936-PENGENALAN KEHIDUPAN KAMPUS MAHASISWA BARU UNIVERSITAS BRAWIJAYA.JPG" class="card-img-top gambar-info">
+                                <img v-bind:src="'/pictures/produk/celana/' + produk.pictures" class="card-img-top gambar-info">
                               </div>
                               <div class="product-details">
-                                <h6 class="display-6 mt-3">{{ shirt.name }}</h6>
-                                <h6 class="display-6 text-muted">Rp.{{ shirt.price }}</h6>
+                                <h6 class="display-6 mt-3">{{ produk.name }}</h6>
+                                <h6 class="display-6 text-muted">Rp.{{ produk.price }}</h6>
                               </div>
                             </div>
-                        </div>
+                          </div>
                       </ul>
                       </b-tab>
                     <b-tab title="Terbaru">
                       <ul class="container mt-4">
                         <div class="row">
-                          <div v-for="(shirt, index) in shirts" :key="index" class="col-md-3 mt-5 mb-2 text-center">
+                            <div v-for="(produk, index) in celana" :key="index" class="col-md-3 mt-5 mb-2 text-center">
                               <div class="card kotak-produk">
-                                <img src="https://rajabrawijaya.ub.ac.id/public/uploads/foto-artikel/1565647936-PENGENALAN KEHIDUPAN KAMPUS MAHASISWA BARU UNIVERSITAS BRAWIJAYA.JPG" class="card-img-top gambar-info">
+                                <img v-bind:src="'/pictures/produk/celana/' + produk.pictures" class="card-img-top gambar-info">
                               </div>
                               <div class="product-details">
-                                <h6 class="display-6 mt-3">{{ shirt.name }}</h6>
-                                <h6 class="display-6 text-muted">Rp.{{ shirt.price }}</h6>
+                                <h6 class="display-6 mt-3">{{ produk.name }}</h6>
+                                <h6 class="display-6 text-muted">Rp.{{ produk.price }}</h6>
                               </div>
                             </div>
-                        </div>
+                          </div>
                       </ul>
                     </b-tab>
                   </b-tabs>
@@ -122,10 +122,6 @@
         </div>
 </body>
 </html>
-  <!-- <div id="app">
-    <h1 v-for="(shirt, index) in shirts" :key="index">{{ shirt.name }}</h1>
-    <h1 v-for="(tshirt, index) in tshirts" :key="index">{{ tshirt.price }}</h1>
-    </div> -->
 </template>
 
 <script>
@@ -138,17 +134,17 @@ export default {
   name: 'App',
   data () {
     return {
-      tshirts: [],
-      shirts: [],
-      pants: []
+      baju: [],
+      sepatu: [],
+      celana: []
     }
   },
   async created () {
     axios.get('http://localhost:8080/db.json')
       .then((result) => {
-        this.tshirts = result.data.tshirts
-        this.shirts = result.data.shirts
-        this.pants = result.data.pants
+        this.baju = result.data.baju
+        this.sepatu = result.data.sepatu
+        this.celana = result.data.celana
       })
   }
 }
