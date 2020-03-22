@@ -73,7 +73,7 @@
                           <div class="row">
                             <div v-for="(produk, index) in celana" :key="index" class="col-md-3 mt-5 mb-2 text-center">
                               <div class="card kotak-produk">
-                                <img src="./pictures/produk/celana/1.png" class="card-img-top gambar-info" style="background-color:#F0F1F3;">
+                                <img :src="'/produk/celana/' + produk.pictures " class="card-img-top gambar-info" style="background-color:#F0F1F3;">
                               </div>
                               <div class="product-details">
                                 <h6 class="display-6 mt-3">{{ produk.name }}</h6>
@@ -88,7 +88,7 @@
                         <div class="row">
                             <div v-for="(produk, index) in celana" :key="index" class="col-md-3 mt-5 mb-2 text-center">
                               <div class="card kotak-produk">
-                                <img v-bind:src="'/pictures/produk/celana/' + produk.pictures" class="card-img-top gambar-info">
+                                <img :src="'/produk/celana/' + produk.pictures " class="card-img-top gambar-info" style="background-color:#F0F1F3;">
                               </div>
                               <div class="product-details">
                                 <h6 class="display-6 mt-3">{{ produk.name }}</h6>
@@ -101,15 +101,17 @@
                     <b-tab title="Terbaru">
                       <ul class="container mt-4">
                         <div class="row">
+                            <div class="row">
                             <div v-for="(produk, index) in celana" :key="index" class="col-md-3 mt-5 mb-2 text-center">
                               <div class="card kotak-produk">
-                                <img v-bind:src="'/pictures/produk/celana/' + produk.pictures" class="card-img-top gambar-info">
+                                <img :src="'/produk/celana/' + produk.pictures " class="card-img-top gambar-info" style="background-color:#F0F1F3;">
                               </div>
                               <div class="product-details">
                                 <h6 class="display-6 mt-3">{{ produk.name }}</h6>
                                 <h6 class="display-6 text-muted">Rp.{{ produk.price }}</h6>
                               </div>
                             </div>
+                          </div>
                           </div>
                       </ul>
                     </b-tab>
